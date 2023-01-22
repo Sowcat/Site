@@ -3,3 +3,15 @@
 <p>Hello!</p>
 <p>Site under construction.</p>
 <p>Check back soon!</p>
+
+<p>Current count: @Count</p>
+<button @onclick="IncrementCount">Click me!</button>
+
+@code{
+    public int Count { get; set; }
+
+    public void IncrementCount() {
+        Count++;
+        Console.WriteLine($"Current count: {Count}");
+    }
+}
