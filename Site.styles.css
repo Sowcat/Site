@@ -1,3 +1,31 @@
 @import '_content/BlazorStrap.V5/BlazorStrap.V5.bundle.scp.css';
 @import '_content/BlazorStrap/BlazorStrap.bundle.scp.css';
 
+/* /Pages/Index.razor.rz.scp.css */
+#top-top[b-np0spwwsps] {
+    background-color: mediumslateblue;
+    color: whitesmoke;
+    padding: 10px;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Unbounded', serif;
+}
+
+#top-bottom[b-np0spwwsps] {
+    background-color: slateblue;
+    color: whitesmoke;
+    padding: 10px;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Sofia', serif;
+}
+
+#posts[b-np0spwwsps] {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
