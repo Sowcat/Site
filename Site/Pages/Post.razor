@@ -27,7 +27,7 @@
     public RenderFragment ChildContent { get; set; } = null!;
 
     private string GetFriendlyDate() {
-        var output = Date.ToString("dd MMMM yyyy");
+        var output = Date.ToString("MMMM dd, yyyy");
         var days = (DateTime.Now - Date).Days;
 
         output += days switch {
