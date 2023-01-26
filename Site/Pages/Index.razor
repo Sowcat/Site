@@ -1,17 +1,30 @@
 ﻿@page "/"
 
-<p>Hello!</p>
-<p>Site under construction.</p>
-<p>Check back soon!</p>
+<div id="top">
+    <div id="top-top">Sowcat</div>
+    <div id="top-bottom">A simple 3D platformer made in Unreal Engine 4</div>
+</div>
 
-<p>Current count: @Count</p>
-<button @onclick="IncrementCount">Click me!</button>
+<div id="posts">
+    <Post Name="First Post" Description="Hello World!">
+        <p>
+            On this small blog I will be posting about the development of my game Sowcat.
+            I will be posting about the development of the game, the tools I use, and the challenges I face.
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/f_PM1rKGBXE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </Post><br/>
 
-@code{
-    public int Count { get; set; }
-
-    public void IncrementCount() {
-        Count++;
-        Console.WriteLine($"Current count: {Count}");
-    }
-}
+    <Post Name="Plans going forward">
+        <p>
+            Currently I will be learning how to use Unreal Engine 4, how it work, and how to use it to make a 3D game.
+            One thing that is certain is that I will be using Modern C++ to make the game.
+            For smaller things, like GUI, I will stick to Blueprints.
+        </p>
+        <hr/>
+        <p>
+            After successfully setting up VCPKG and Unreal integration with Jetbrains Rider and making a simple discord bot in Modern C++,
+            it's time to start learning how to use Unreal Engine 4 and start making the game.
+        </p>
+        <img src="https://fixingport.com/wp-content/uploads/2020/05/Unreal-Engine-4-System-Requirements-Image.jpg" alt="Unreal Engine 4" width="560" height="315"/>
+    </Post><br/>
+</div>

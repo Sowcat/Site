@@ -1,0 +1,27 @@
+﻿#top-top {
+    background-color: mediumslateblue;
+    color: whitesmoke;
+    padding: 10px;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Unbounded', serif;
+}
+
+#top-bottom {
+    background-color: slateblue;
+    color: whitesmoke;
+    padding: 10px;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Sofia', serif;
+}
+
+#posts {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}

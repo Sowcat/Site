@@ -1,0 +1,43 @@
+﻿@using BlazorStrap
+
+<BSCard CardType="CardType.Card" style="width: 100%;">
+    <div>
+        <BSCard CardType="CardType.Body">
+            <BSCard CardType="CardType.Title">@Name</BSCard>
+            <BSCard CardType="CardType.Subtitle" TextColor="TextColor.Muted">@Description</BSCard>
+            <hr/>
+            @ChildContent
+            <BSCard CardType="CardType.Footer" TextColor="TextColor.Muted">Date: @GetFriendlyDate()</BSCard>
+        </BSCard>
+    </div>
+</BSCard>
+
+@code {
+
+    [Parameter]
+    public string Name { get; set; } = "New Post";
+
+    [Parameter]
+    public string Description { get; set; } = "";
+
+    [Parameter]
+    public DateTime Date { get; set; } = new(2023, 01, 26);
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; } = null!;
+
+    private string GetFriendlyDate() {
+        var output = Date.ToString("dd MMMM yyyy");
+        var days = (DateTime.Now - Date).Days;
+
+        output += days switch {
+            0 => " (Today)",
+            1 => " (Yesterday)",
+            > 1 => $" ({days} days ago)",
+            _ => ""
+            };
+
+        return output;
+    }
+
+}
